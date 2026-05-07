@@ -1,0 +1,21 @@
+/* Minimal custom styles because Tailwind covers most */
+.file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.file-upload-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Loading spinner */
+.spinner {
+    border-top-color: #3b82f6;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
